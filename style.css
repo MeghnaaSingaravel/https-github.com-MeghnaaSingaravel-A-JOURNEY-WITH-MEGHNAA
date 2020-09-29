@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+
+*{
+    padding:0;
+    margin: 0;
+}
+
+header{
+background-image: url("https://c1.wallpaperflare.com/preview/284/914/436/book-page-pages-open-book-history-written.jpg");
+background-size: 100% 100%;
+max-width: 100%;
+max-height: 100%;
+background: 8px solid #1b1717;
+}
+
+#logo img{
+    height:19vh;
+}
+
+body{
+    color: black;
+    background-color: lightgray;
+}
+
+#header-text>p{
+    width: 300px;
+}
+
+#scroll{
+    width: 100px;
+}
+
+.flex-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.movies{
+    flex-wrap: wrap;
+    min-height: 300px;
+    margin: 3% 14%;
+
+}
+
+.movie-text{
+    max-width: 400px;
+}
+
+.flex-column{
+    display: flex ;
+    flex-direction: column ;
+    justify-content: space-evenly ;
+}
+
+#header-text{
+    max-width: 500px;
+    min-height: 300px;
+    padding: 10% 0%;
+    margin: auto;
+    align-items: center;
+    text-align: center;
+}
+
+.button{
+    background-color: #050211;
+    page-break-after: 10px;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+#play{
+    display: inline;
+}
+
+.movie-image{
+height: 400px;
+width: 600px;
+}
+
+.movie-image>img{
+    width: 100%;
+}
+
+h1{
+    font-family: 'Pacifico', cursive;
+    font-size: 45px;
+}
+
+p{
+font-family: 'Pacifico', cursive;
+font-size: 22px;
+}
+
+.movie-text>p{
+margin: 22px 0px;
+}
+
+hr{
+    color: #1b1717;
+    border: 4px solid #1b1717;
+}
+
+footer{
+    height: 90px;
+    text-align: center;
+}
+
+#scroll{
+    position: relative;
+    animation: mymove 3s infinite;
+    animation-play-state: running;
+}
+
+@keyframes mymove{
+    from{
+        top: 15px;
+    }
+    to{
+        top: 100px;
+    }
+}
+
+@media only screen (max-width:600px){
+    .wrap-reverse{
+        flex-wrap:wrap-reverse;
+    }
+    .container{
+        text-align: center;
+    }
+    .button{
+        margin: 0% 2%;
+    }
+}
